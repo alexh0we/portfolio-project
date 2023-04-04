@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Selector</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="./fonts.css"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <h1>Click a color to choose a starter</h1>
+
+    </header>
+
+    <main>
+
+        <section class="pokeballs" id="pokeballs">
+
+            <article class="pokeball red" id="red-article">
+                <!-- <img src=".pngs/pokeballl-curved.png"> -->
+            </article>
+
+            <article class="pokeball blue" id="blue-article">
+                <!-- <img src=".pngs/pokeballl-curved.png"> -->
+            </article>
+
+            <article class="pokeball green" id="green-article">
+                <!-- <img src=".pngs/pokeballl-curved.png"> -->
+            </article>
+    
+        </section>
+
+
+        
+        <article class="pokemon-image" id="image-article"> 
+        
+            <img class="pokemon-image" id="pokemon-image" src=".pngs/charmanderpng.png" alt="charmander"> 
+                <!-- change img src to match the article that has been hovered over or clicked -->
+        </article>
+
+        <article class="info" id="pokedex-info-article">
+
+            <!-- Update this to include an unordered list that accepts relevant pokemon information from the api -->
+            <p class="pokedex" id="pokedex-info-p"></p>
+
+            <!-- <ul class="hidden stats">
+                <li><span id="pokemon-type">Pokemon type</span></li>
+                <li><span id="pokemon-ability">Ability</span></li>
+                <li><span id="something-else">Something</span></li>
+                <li><span id="typically-found">Typically found in...</span></li>
+             </ul> -->
+
+        </article>
+
+        <aside class="error" id="error-aside">
+
+
+        
+        </aside>
+
+        <aside class="starter-name">
+
+            <span id="starter-name">Replace Me</span>
+
+        </aside>
+
+        <section class="bottom" id="bottom-section">
+
+            <article id="about-me" class="about-me">
+                <a href="./about.html">About me</a>
+            </article>
+
+            <form>
+
+                <select id="select-pokemon" name="category">
+                    <option id="error-option" selected value="error">I choose ---------------------> </option>
+                    <option id="charmander-option" value="charmander">Charmander, I choose you!</option>
+                    <option id="squirtle-option" value="squirtle">Squirtle, I choose you!</option>
+                    <option id="bulbasaur-option" value="bulbasaur">Bulbasaur, I choose you!</option>
+                </select>
+                <input type="submit" value="Go!"/>
+
+            </form>
+
+        </section>
+
+        
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: PokemonClassic;
+    src: url(./fonts/Pokemon\ Classic.ttf);
+}
+
+li {
+    list-style : none;
+    
+}
+
+li::before {
+
+    content: url('https://api.iconify.design/mdi/pokeball.svg?width=20&height=20');
+}
+body {
+    font-family: PokemonClassic;
+}
+
+a:hover {
+    color: orange;
+}

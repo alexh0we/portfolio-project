@@ -1,0 +1,64 @@
+body {
+    border: 3px solid rebeccapurple;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: skyblue;
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 0.2fr;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+header {
+    border-bottom : 3px solid rebeccapurple;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-column: span 3;
+    padding-top: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    grid-column: 2;
+}
+
+main {
+    display: grid;
+    grid-column: 2/ span 1;
+    grid-row: span 1;
+
+}
+
+article {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-left: 15px;
+    font-weight: bold;
+    grid-column: span 3;
+}
+
+article.about-me {
+    grid-row : -1;
+}
+
+
+article > p {
+    height: fit-content;
+}
+
+article > image {
+   object-fit: contain;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    body {
+        background: skyblue;
+    }
+}
+  @media (max-width: 767px) {
+    body {
+        background: lawngreen;
+    }
+  }
